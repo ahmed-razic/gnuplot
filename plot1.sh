@@ -21,6 +21,18 @@ set xrange [-2*pi:2*pi]
 a = 0.5
 plot a*sin(x)
 
+
+set terminal qt 2
+set xlabel "argument x"
+set ylabel "f(x)"
+set xrange [-2*pi:2*pi]
+set title "f(x)=sin(x)*cos(x)"
+set grid
+set xtics
+set ytics
+f(x)=sin(x)*cos(x)
+
+plot f(x)
 pause -1
 
 #EOF
