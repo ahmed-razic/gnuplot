@@ -1,4 +1,5 @@
-#First plots
+#1 - Basic use
+
 set terminal qt 0
 set xlabel "X-AXIS"
 set ylabel "Y-AXIS"
