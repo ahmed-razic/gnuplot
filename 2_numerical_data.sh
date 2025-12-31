@@ -1,4 +1,4 @@
-#2 - Numerical calculations
+#2 - Numerical data
 set terminal qt 0
 
 set title "Pade approximation"
