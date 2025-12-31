@@ -11,8 +11,15 @@ set yrange [0:4]
 
 plot f(x)
 
+#values of function at specific arguemnt
 print f(0.25)
 print f(0.5)
 print f(0.75)
+
+#save values in table format
+set table
+set output "data_3/data_3.dat"
+plot f(x)
+
 
 pause -1
