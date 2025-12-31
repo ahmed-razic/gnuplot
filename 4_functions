@@ -1,0 +1,18 @@
+#4 - Functions
+set terminal qt 0
+
+a=0.25
+b=0.02
+c=0.05
+d=0.1
+f(x)=c/((x-a)**2+b)+d/sqrt(x)
+set xrange [0:1]
+set yrange [0:4]
+
+plot f(x)
+
+print f(0.25)
+print f(0.5)
+print f(0.75)
+
+pause -1
