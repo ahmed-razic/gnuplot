@@ -14,9 +14,9 @@ set mxtics 5    #number of interval divisions
 set ytics 0.5
 set mytics 3
 
-plot "data/data.dat" using 1:2 title "Analytical" with lines, "data/data.dat" using 1:3 title "L=1, M=2" with lines, \
-"data/data.dat" using 1:4 title "L=2, M=1" with lines
-
+plot "data/data_1/data_1.dat" using 1:2 title "Analytical" with lines,\
+"data/data_1/data_1.dat" using 1:3 title "L=1, M=2" with lines,\
+"data/data_1/data_1.dat" using 1:4 title "L=2, M=1" with lines
 
 pause -1
 
