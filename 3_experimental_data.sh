@@ -27,4 +27,30 @@ plot f(x) with lines linestyle 1, \
 "" index 1:1 using 1:2:3 title "B. Smith (1983)" with yerrorbars linestyle 3,\
 "" index 2:2 using 1:2:3 title "C Smith (1999)" with yerrorbars linestyle 4 
 
+
+set terminal qt 1
+reset
+set key bottom left
+set title "Line Types"
+set xlabel "x"
+set ylabel "f(x)"
+set xrange [0:2*pi]
+set yrange [-1:1]
+set ytics 1
+set mytics 5
+set xtics pi/4
+set mxtics 2
+set grid
+
+set style line 1 lt 1 lc "blue" lw 3 pt 19 ps 4 dt 2
+set style line 2 lt 1 lc "green" lw 7 pt 9 ps 7 dt 5
+set style line 3 lt 1 lc "#dd181f" lw 5 pt 9 ps 7 dt 7
+
+plot sin(x) linestyle 1, cos(x) linestyle 2, sin(x)*cos(x) linestyle 3
+
+
+set terminal qt 2
+reset 
+test
+
 pause -1
