@@ -1,0 +1,20 @@
+#!/bin/bash
+set terminal qt 0
+
+set xlabel "x"
+set ylabel "y=exp(-x)"
+set title "Pade approximation"
+set xrange [0:2] noreverse nowriteback
+set yrange [0:1] noreverse nowriteback
+set mxtics 5.000000
+set mytics 5.000000
+set xtics border mirror norotate 1
+set ytics border mirror norotate 0.5
+
+plot "data_5/output.dat" using 1:2 title "Analytical" w l, \
+"data_5/output.dat" using 1:3 title "L=1 M=2" w l, \
+"data_5/output.dat" using 1:4 title "L=2 M=1" w l
+
+pause -1
+
+#EOF
