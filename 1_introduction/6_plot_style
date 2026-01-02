@@ -1,0 +1,10 @@
+set terminal qt 0
+
+set xrange [-2:2]
+set yrange [0:1.1]
+
+f(x)=exp(-x**2)
+
+plot f(x) with lines, f(x) with boxes
+
+pause -1
